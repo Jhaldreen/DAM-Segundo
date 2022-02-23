@@ -1,0 +1,4 @@
+Código,Nombre,Categoría,Descripción,Método abastecimiento,Método coste,Método suministro,Precio coste,Precio de venta,Puede ser comprado,Puede ser vendido,Tipo de producto,Empresas/Empresa,Impuestos cliente,Impuestos proveedor,UoM de compra,UoM por defecto
+cod1,nombreproducto1,All,descripcion producto1,make_to_order,standard,buy,0.0,0.0,True,True,Consumible,Empresa demo,IVA 7%,7% IVA Soportado (operaciones corrientes),kg,kg
+cod2,nombreproducto2,All,descripcion producto2,make_to_stock,standard,buy,0.0,0.0,True,True,Consumible,Empresa demo,IVA 7%,7% IVA Soportado (operaciones corrientes),kg,kg
+cod3,nombreproducto3,All,descripcion producto3,make_to_order,standard,buy,0.0,0.0,True,True,Consumible,Empresa demo,IVA 7%,7% IVA Soportado (operaciones corrientes),kg,kg

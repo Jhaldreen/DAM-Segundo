@@ -1,0 +1,4 @@
+Name,create_date,display_name,lang,website,active,type,street,zip,city,country_id,email,phone,is_company,industry_id,customer_rank
+Antonio,,ANT,español,www.asd.com,TRUE,contact,federico vial,39009,Santander,68,asd@asd.com,654987321,FALSE,10,1
+Sara,,SAR,español,www.dsa.com,TRUE,contact,vicente trueba,36204,Vigo,68,ert@,693258147,FALSE,10,1
+Pepe,,PEP,español,www.ld.com,TRUE,contact,santan lucia,39010,Santander,68,pep@pep.com,638956321,FALSE,10,1
