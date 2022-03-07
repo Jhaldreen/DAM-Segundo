@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaJuego">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txtIntentos"
+            android:layout_width="406dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="25dp">
+
+        </TextView>
+
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    //fila1
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/boton00"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_column="0"
+                android:backgroundTint="#B069DC"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/boton01"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_column="1"
+                android:backgroundTint="#B069DC">
+
+            </ImageButton>
+
+        <ImageButton
+            android:id="@+id/boton02"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:layout_column="2"
+            android:backgroundTint="#B069DC">
+        </ImageButton>
+        </TableRow>
+        //fila2
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/boton03"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout_column="0"
+                android:backgroundTint="#B069DC">
+            </ImageButton>
+            <ImageButton
+                android:id="@+id/boton04"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout_column="1"
+                android:backgroundTint="#B069DC">
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/boton05"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout_column="2"
+                android:backgroundTint="#B069DC">
+            </ImageButton>
+        </TableRow>
+        //fila3
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/boton06"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout_column="0"
+                android:backgroundTint="#B069DC">
+            </ImageButton>
+            <ImageButton
+                android:id="@+id/boton07"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout_column="1"
+                android:backgroundTint="#B069DC">
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/boton08"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout_column="2"
+                android:backgroundTint="#B069DC">
+            </ImageButton>
+        </TableRow>
+        //fila4
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/boton09"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout_column="0"
+                android:backgroundTint="#B069DC">
+            </ImageButton>
+            <ImageButton
+                android:id="@+id/boton10"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout_column="1"
+                android:backgroundTint="#B069DC">
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/boton11"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout_column="2"
+                android:backgroundTint="#B069DC">
+            </ImageButton>
+        </TableRow>
+
+
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
