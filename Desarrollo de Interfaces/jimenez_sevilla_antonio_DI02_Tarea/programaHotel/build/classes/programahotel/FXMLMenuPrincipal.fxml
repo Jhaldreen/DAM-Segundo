@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="programahotel.FXMLMenuPrincipalController">
+   <children>
+      <Pane layoutY="-7.0" prefHeight="407.0" prefWidth="600.0" style="-fx-background-color: pink;">
+         <children>
+            <Button fx:id="btnReservas" layoutX="102.0" layoutY="307.0" mnemonicParsing="false" onAction="#handlebtnReservas" text="Reservas">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSalir" layoutX="386.0" layoutY="307.0" mnemonicParsing="false" onAction="#handlebtnSalir" prefHeight="47.0" prefWidth="153.0" text="Salir">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="188.0" fitWidth="274.0" layoutX="163.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagenes/salon01.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="55.0" prefWidth="600.0" text="Reservas Salón Havana">
+               <font>
+                  <Font name="Broadway" size="45.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
