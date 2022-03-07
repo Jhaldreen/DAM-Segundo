@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ingresos>
+<ingreso numero="100">
+<paciente>Lopez Suarez, Mario</paciente>
+<medico nombre="Ines">Sanchez Tortosa</medico>
+<Numero_cama>101</Numero_cama>
+<descripcion>Migrañas</descripcion>
+</ingreso>
+<ingreso numero="101">
+<paciente>Lopez Suarez, Mario</paciente>
+<medico nombre="Martin">Lopez de Antuña Perez</medico>
+<Numero_cama>303</Numero_cama>
+<descripcion>Esguince tobillo</descripcion>
+</ingreso>
+<ingreso numero="200">
+<paciente>Martinez Perez, Andrea</paciente>
+<medico nombre="Angela">De Diego Lopez</medico>
+<Numero_cama>202</Numero_cama>
+<descripcion>Arritmia</descripcion>
+</ingreso>
+<ingreso numero="201">
+<paciente>Martinez Perez, Andrea</paciente>
+<medico nombre="Ines">Sanchez Tortosa</medico>
+<Numero_cama>125</Numero_cama>
+<descripcion>Obstrucción arterial</descripcion>
+</ingreso>
+<ingreso numero="300">
+<paciente>Sagasta Ruiz, Juan Luis</paciente>
+<medico nombre="Martin">Lopez de Antuña Perez</medico>
+<Numero_cama>303</Numero_cama>
+<descripcion>Rotura tibia</descripcion>
+</ingreso>
+<ingreso numero="301">
+<paciente>Sagasta Ruiz, Juan Luis</paciente>
+<medico nombre="Angela">De Diego Lopez</medico>
+<Numero_cama>213</Numero_cama>
+<descripcion>Trasplante</descripcion>
+</ingreso>
+<ingreso numero="400">
+<paciente>Lopez Suarez, Mario</paciente>
+<medico nombre="Tu nombre">Tus apellidos</medico>
+<Numero_cama>130</Numero_cama>
+<descripcion>Apendicitis</descripcion>
+</ingreso>
+<ingreso numero="401">
+<paciente>Martinez Perez, Andrea</paciente>
+<medico nombre="Tu nombre">Tus apellidos</medico>
+<Numero_cama>112</Numero_cama>
+<descripcion>Infección</descripcion>
+</ingreso>
+<ingreso numero="402">
+<paciente>Sagasta Ruiz, Juan Luis</paciente>
+<medico nombre="Tu nombre">Tus apellidos</medico>
+<Numero_cama>108</Numero_cama>
+<descripcion>Reconocimiento</descripcion>
+</ingreso>
+</ingresos>
