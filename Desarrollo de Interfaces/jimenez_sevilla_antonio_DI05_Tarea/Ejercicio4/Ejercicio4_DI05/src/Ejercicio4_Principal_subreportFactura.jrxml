@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Ejercicio4_Principal_subreport2" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="aef38474-6fea-491b-a113-97f1a44f720c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="pedido" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[1]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT sum(d.precio*d.unidades) AS importe,p.ID_Pedido,p.Fecha_Pedido,
+d.Precio,d.Unidades
+FROM detalle_pedidos d
+right outer join pedidos p ON d.ID_Pedido = p.ID_Pedido
+WHERE p.ID_Pedido = $P{pedido}]]>
+	</queryString>
+	<field name="importe" class="java.math.BigDecimal"/>
+	<field name="ID_Pedido" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Fecha_Pedido" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Precio" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Unidades" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="60" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="15" width="555" height="20" backcolor="#0099CC" uuid="b48a7007-a7fd-4d82-a3a5-64072215abe8"/>
+			</frame>
+			<staticText>
+				<reportElement x="293" y="15" width="100" height="20" uuid="a114d565-1548-4c49-846f-97f6208c88ad"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Unidades]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="293" y="35" width="100" height="20" uuid="2a5d72f2-5d24-45b9-96cb-2d43d8a9dd55"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Unidades}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="419" y="15" width="100" height="20" uuid="79fcef15-beb6-4e56-926e-5aa5abe16b91"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[importe]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="419" y="35" width="100" height="20" uuid="cece9a29-df56-4db2-aadd-8543bbd165c9"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{importe}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="15" width="119" height="20" uuid="d83b618b-2928-4de9-92c3-44134e87e118"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Numero de Pedido]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="20" y="35" width="100" height="20" uuid="d35aca69-3909-4897-b8f2-2cb6d89fe53e"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ID_Pedido}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="139" y="15" width="100" height="20" uuid="a5385dae-1548-42a6-91e5-26608a46f7e6"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Fecha]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="139" y="35" width="119" height="20" uuid="4cad208f-b0e0-493c-9122-2e70ae881e54"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Fecha_Pedido}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

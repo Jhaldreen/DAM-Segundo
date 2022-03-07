@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ee82c554-b4a0-491c-8cca-ae5ef8c5f53c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     Sum(detalle_pedidos.`Unidades`) AS SumaUnidades,
+     articulos.`Id_articulo` AS articulos_Id_articulo,
+     articulos.`Descripcion` AS articulos_Descripcion,
+     detalle_pedidos.`Unidades` AS detalle_pedidos_Unidades
+FROM
+     `articulos` articulos INNER JOIN `detalle_pedidos` detalle_pedidos ON articulos.`Id_articulo` = detalle_pedidos.`ID_Articulo`
+GROUP BY
+     articulos_Descripcion
+ORDER BY
+     articulos.`Id_articulo` ASC]]>
+	</queryString>
+	<field name="SumaUnidades" class="java.math.BigDecimal"/>
+	<field name="articulos_Id_articulo" class="java.lang.Integer"/>
+	<field name="articulos_Descripcion" class="java.lang.String"/>
+	<field name="detalle_pedidos_Unidades" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="480" splitType="Stretch">
+			<staticText>
+				<reportElement x="236" y="451" width="100" height="20" uuid="6d8f6020-1892-4266-b127-93a361e0ece6"/>
+				<textElement>
+					<font size="14" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Descripción]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="451" width="100" height="20" uuid="9cf51da2-0e6b-49f6-ba13-8171d837d793"/>
+				<textElement>
+					<font size="14" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Cantidad Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="451" width="158" height="20" uuid="1203d3e8-e5fa-4778-8736-295ec061e0c5"/>
+				<textElement>
+					<font size="14" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Nombre del Artículo]]></text>
+			</staticText>
+			<barChart>
+				<chart evaluationTime="Report">
+					<reportElement x="0" y="0" width="555" height="430" uuid="f37e4d38-7d59-43fb-8518-4a3ecbdfbab2"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["Cantidad Total"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{articulos_Descripcion}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{detalle_pedidos_Unidades}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot orientation="Horizontal"/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
+		</band>
+	</title>
+	<detail>
+		<band height="37" splitType="Stretch">
+			<textField>
+				<reportElement x="455" y="11" width="100" height="20" uuid="b3338696-f176-40cd-93eb-cbc31eec8e05"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SumaUnidades}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="11" width="18" height="20" uuid="90b1a12b-ce86-488b-bf49-57ae9a1a1860"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{articulos_Id_articulo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="236" y="11" width="202" height="20" uuid="c15b8265-d0e1-4963-980d-d3e283ad4dac"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{articulos_Descripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="18" y="11" width="100" height="20" uuid="39d79839-f8db-4f90-954f-7c616d7c28a4"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{articulos_Descripcion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

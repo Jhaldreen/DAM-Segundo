@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4430a365-89b2-4975-b72f-4fcdbbae17d5">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT sum(d.precio*d.unidades) AS importe, c.nombre, c.direccion,c.ciudad,p.ID_Pedido,p.Fecha_Pedido,
+d.Precio,d.Unidades,c.ID_Cliente
+FROM articulos a INNER JOIN detalle_pedidos d ON a.Id_articulo = d.ID_Articulo
+right outer join pedidos p ON d.ID_Pedido = p.ID_Pedido
+INNER JOIN clientes c ON p.ID_Cliente = c.ID_Cliente
+GROUP BY id_pedido]]>
+	</queryString>
+	<field name="importe" class="java.math.BigDecimal"/>
+	<field name="nombre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ciudad" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ID_Pedido" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Fecha_Pedido" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Precio" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Unidades" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ID_Cliente" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="importe_1" class="java.math.BigDecimal" resetType="Group" resetGroup="Clientes" calculation="Sum">
+		<variableExpression><![CDATA[$F{importe}]]></variableExpression>
+	</variable>
+	<variable name="importe_2" class="java.math.BigDecimal" resetType="Group" resetGroup="Clientes" calculation="Sum">
+		<variableExpression><![CDATA[$F{importe}]]></variableExpression>
+	</variable>
+	<variable name="importe_3" class="java.math.BigDecimal" resetType="Group" resetGroup="Clientes" calculation="Sum">
+		<variableExpression><![CDATA[$F{importe}]]></variableExpression>
+	</variable>
+	<group name="Clientes">
+		<groupExpression><![CDATA[$F{ID_Cliente}]]></groupExpression>
+		<groupHeader>
+			<band height="111">
+				<textField>
+					<reportElement x="0" y="29" width="157" height="20" uuid="6294caab-69ce-4705-a386-71d8df432449"/>
+					<textElement>
+						<font size="12" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="189" y="29" width="182" height="20" uuid="1c636d20-13a3-43a7-88f2-479c67bc3872"/>
+					<textElement>
+						<font size="12" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="436" y="29" width="100" height="20" uuid="93d01d99-0efa-4f01-b890-d8c6509231f7"/>
+					<textElement>
+						<font size="12" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ciudad}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="58" width="158" height="24" uuid="aa20dfde-d64c-4f7b-aa2c-7d9549b76ddc"/>
+					<textElement>
+						<font size="16" isBold="true" isUnderline="true"/>
+					</textElement>
+					<text><![CDATA[Detalles del Pedido]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="0" width="146" height="29" uuid="7ee4aa34-cfce-4d92-9d17-e22546ec212d"/>
+					<textElement>
+						<font size="16" isBold="true" isUnderline="true"/>
+					</textElement>
+					<text><![CDATA[Detalles de Cliente]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="91" width="130" height="20" uuid="76269929-346f-410a-9809-be94d68bb261"/>
+					<textElement>
+						<font size="12" isBold="true" isUnderline="true"/>
+					</textElement>
+					<text><![CDATA[Número de Pedido]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="157" y="91" width="100" height="20" uuid="77b658f7-8f38-42df-9bb5-97ec47ee1c2f"/>
+					<textElement>
+						<font size="12" isBold="true" isUnderline="true"/>
+					</textElement>
+					<text><![CDATA[Fecha]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="298" y="91" width="100" height="20" uuid="92fea72b-0806-4f14-85c0-6edd7601b8bc"/>
+					<textElement>
+						<font size="12" isBold="true" isUnderline="true"/>
+					</textElement>
+					<text><![CDATA[Unidades]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="436" y="91" width="100" height="20" uuid="5d10edaf-f467-453d-aeda-67dcbc0b525e"/>
+					<textElement>
+						<font size="12" isBold="true" isUnderline="true"/>
+					</textElement>
+					<text><![CDATA[Importe]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="29">
+				<staticText>
+					<reportElement x="328" y="9" width="108" height="20" forecolor="#0033FF" uuid="90323dc9-74fe-4006-89d2-b37abec0e515"/>
+					<textElement>
+						<font size="12" isBold="true" isUnderline="true"/>
+					</textElement>
+					<text><![CDATA[Importe a Pagar]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="436" y="9" width="119" height="20" forecolor="#0033FF" uuid="48869cba-8992-487c-88ee-1a4dad60dd7a"/>
+					<textElement>
+						<font size="12" isBold="true" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{importe_3}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="230" y="0" width="121" height="31" uuid="5ad44831-8b0f-496c-b35e-19b04ec0bf96"/>
+				<textElement>
+					<font size="20" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Facturas]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="27" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="130" height="20" uuid="efc4e57b-bae4-4194-8b49-9a5a00acb0eb"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ID_Pedido}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="157" y="0" width="100" height="20" uuid="39e9af12-f884-4706-812f-5a1e1c3f54c1"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Fecha_Pedido}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="294" y="0" width="57" height="20" uuid="3dd3d51d-9946-4700-89bc-65cba6945f9f"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Unidades}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="436" y="0" width="100" height="20" uuid="77e8d1a7-c2df-4539-897d-291a47ab81a1"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{importe}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
