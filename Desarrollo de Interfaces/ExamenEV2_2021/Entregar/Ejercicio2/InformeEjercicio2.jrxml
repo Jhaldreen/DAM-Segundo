@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="InformeEjercicio2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="929d0fb0-cb8b-4471-920e-657ed0bda650">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[/*Consulta4*/
+SELECT categoria.CategoryName,year(pedido.OrderDate) as anio,sum(pedido_linea.UnitPrice*(1-pedido_linea.Discount)*pedido_linea.Quantity) as total FROM pedido inner join pedido_linea on pedido.OrderID=pedido_linea.OrderID inner join producto on producto.ProductID=pedido_linea.ProductID inner join cliente on cliente.CustomerID=pedido.CustomerID inner join categoria on producto.CategoryID=categoria.CategoryID
+where year(pedido.OrderDate)>2018
+group by year(pedido.OrderDate),producto.CategoryID]]>
+	</queryString>
+	<field name="CategoryName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="anio" class="java.lang.Integer"/>
+	<field name="total" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="236" splitType="Stretch">
+			<barChart>
+				<chart>
+					<reportElement x="51" y="74" width="200" height="100" uuid="4ecb6b73-7ff1-460e-8e75-d09218ed681a"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["Dummy Series"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{anio}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{total}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
+		</band>
+	</summary>
+</jasperReport>

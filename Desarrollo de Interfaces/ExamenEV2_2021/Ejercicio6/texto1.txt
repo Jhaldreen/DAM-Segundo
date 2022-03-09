@@ -1,0 +1,3 @@
+Funcionamiento de la aplicación
+Esta aplicación genera un informe que presenta los datos de los ventas anuales por categoria, producto y años desde el 2018. 
+En la ventana principal debe seleccionar el año de búsqueda del que desea obtener la información y hacer clic en informe.

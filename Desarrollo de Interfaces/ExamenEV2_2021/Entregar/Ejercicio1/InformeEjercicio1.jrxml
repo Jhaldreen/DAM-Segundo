@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="InformeEjercicio1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="32b0f927-daa5-4fe4-a852-6cbfad587178">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT proveedores.CompanyName,producto.productName,producto.UnitPrice, producto.UnitsInStock, producto.UnitPrice*producto.UnitsInStock as valorStock,producto.UnitsOnOrder FROM producto inner join proveedores on producto.SupplierID=proveedores.SupplierID]]>
+	</queryString>
+	<field name="CompanyName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="productName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="UnitPrice" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="UnitsInStock" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorStock" class="java.math.BigDecimal"/>
+	<field name="UnitsOnOrder" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="49" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="307" height="17" uuid="9919f819-6660-45cd-b40a-348285970328"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Proveedor de: "+$F{productName}+" :"+$F{CompanyName}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00">
+				<reportElement x="0" y="17" width="128" height="15" uuid="f09ffa7a-9761-4788-ab68-c7b500972483"/>
+				<textFieldExpression><![CDATA["PrecioCompra UD: "]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00">
+				<reportElement x="128" y="17" width="100" height="15" uuid="8a8f192f-b169-4a5b-9068-c717865f5862"/>
+				<textFieldExpression><![CDATA[$F{UnitPrice}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00">
+				<reportElement x="0" y="32" width="68" height="15" uuid="b2b098e8-ccb2-412a-8b0f-d4a445a286d0"/>
+				<textFieldExpression><![CDATA["ValorStock:"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00">
+				<reportElement x="204" y="17" width="56" height="30" uuid="65158e89-b84a-4f2f-83dc-e4e71bd6a2f7"/>
+				<textFieldExpression><![CDATA["Stock+Uds Pedidas:"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00">
+				<reportElement x="265" y="25" width="42" height="15" uuid="c2929c92-7f78-48d8-9193-de0eaa036454"/>
+				<textFieldExpression><![CDATA[$F{UnitsInStock}+$F{UnitsOnOrder}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00">
+				<reportElement x="68" y="32" width="100" height="15" uuid="cdb99dd7-1254-42bf-9517-6ac78fd50958"/>
+				<textFieldExpression><![CDATA[$F{valorStock}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
