@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10-mar-2022 12:01:34 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="ejercicio3.Matriculas" table="matriculas" catalog="alumnos" optimistic-lock="version">
+        <composite-id name="id" class="ejercicio3.MatriculasId">
+            <key-property name="dni" type="string">
+                <column name="DNI" length="9" />
+            </key-property>
+            <key-property name="nombreModulo" type="string">
+                <column name="NombreModulo" length="60" />
+            </key-property>
+            <key-property name="curso" type="string">
+                <column name="Curso" length="5" />
+            </key-property>
+        </composite-id>
+        <property name="nota" type="double">
+            <column name="Nota" precision="22" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
