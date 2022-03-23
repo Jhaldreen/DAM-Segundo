@@ -1,0 +1,4 @@
+Esto es un fichero de prueba
+para leer los datos del fichero
+par a la tarea 06 de psp
+Un saludo
