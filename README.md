@@ -1,5 +1,8 @@
 # DAM-Segundo
 
+# PSP
+Es la asigantura más difícil, hay que hacer más ejercicios de los que te mandan ya que sino llegarás al examen y no te enteraras de nada. Normalmente el examen de la primera son los 3 primeros temas, y de la segunda los 4 ultimos.
+
 # SGE
 El ultimo tema de SGE el 5 que hay crear un modulo, puede que ese código no funione en todas las versiones de odoo, por si lo copias lo pegas y no funiona, el resto están todas de 10 
 
