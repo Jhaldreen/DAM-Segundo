@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<primeros>
+    <primero id="Pri1">
+        <nombre>gazpacho</nombre>
+        <ingredientes>
+            <ingrediente nombre="tomate">
+                <cantidad>150</cantidad>
+            </ingrediente>
+            <ingrediente nombre="pimiento verde">
+                <cantidad>50</cantidad>
+            </ingrediente>
+            <ingrediente nombre="ajo">
+                <cantidad>5</cantidad>
+            </ingrediente>
+            <ingrediente nombre="aceite">
+                <cantidad>50</cantidad>
+            </ingrediente>
+        </ingredientes>
+    </primero>
+    <primero id="Pri2">
+        <nombre>ensalada mixta</nombre>
+        <ingredientes>
+            <ingrediente nombre="tomate">
+                <cantidad>50</cantidad>
+            </ingrediente>
+            <ingrediente nombre="lechuga">
+                <cantidad>50</cantidad>
+            </ingrediente>
+            <ingrediente nombre="vinagre">
+                <cantidad>5</cantidad>
+            </ingrediente>
+            <ingrediente nombre="aceite">
+                <cantidad>10</cantidad>
+            </ingrediente>
+        </ingredientes>
+    </primero>
+    <primero id="Pri3">
+        <nombre>sopa fideos</nombre>
+        <ingredientes>
+            <ingrediente nombre="jamon">
+                <cantidad>15</cantidad>
+            </ingrediente>
+            <ingrediente nombre="pollo">
+                <cantidad>50</cantidad>
+            </ingrediente>
+            <ingrediente nombre="ajo">
+                <cantidad>5</cantidad>
+            </ingrediente>
+            <ingrediente nombre="cebolla">
+                <cantidad>50</cantidad>
+            </ingrediente>
+            <ingrediente nombre="pasta">
+                <cantidad>20</cantidad>
+            </ingrediente>
+        </ingredientes>
+    </primero>
+    <primero id="Pri4">
+        <nombre>canelones</nombre>
+        <ingredientes>
+            <ingrediente nombre="jamon">
+                <cantidad>15</cantidad>
+            </ingrediente>
+            <ingrediente nombre="pollo">
+                <cantidad>50</cantidad>
+            </ingrediente>
+            <ingrediente nombre="ajo">
+                <cantidad>5</cantidad>
+            </ingrediente>
+            <ingrediente nombre="cebolla">
+                <cantidad>50</cantidad>
+            </ingrediente>
+            <ingrediente nombre="tomate">
+                <cantidad>50</cantidad>
+            </ingrediente>
+            <ingrediente nombre="harina">
+                <cantidad>15</cantidad>
+            </ingrediente>
+            <ingrediente nombre="pasta obleas">
+                <cantidad>20</cantidad>
+            </ingrediente>
+        </ingredientes>
+    </primero>
+    <primero id="Pri5">
+        <nombre>lentejas</nombre>
+        <ingredientes>
+            <ingrediente nombre="tomate">
+                <cantidad>30</cantidad>
+            </ingrediente>
+            <ingrediente nombre="pimiento verde">
+                <cantidad>50</cantidad>
+            </ingrediente>
+            <ingrediente nombre="ajo">
+                <cantidad>5</cantidad>
+            </ingrediente>
+            <ingrediente nombre="aceite">
+                <cantidad>50</cantidad>
+            </ingrediente>
+            <ingrediente nombre="lentejas">
+                <cantidad>30</cantidad>
+            </ingrediente>
+            <ingrediente nombre="chorizo">
+                <cantidad>10</cantidad>
+            </ingrediente>
+        </ingredientes>
+    </primero>
+    <primero id="Pri6">
+        <nombre>arroz tres delicias</nombre>
+        <ingredientes>
+            <ingrediente nombre="huevo">
+                <cantidad>25</cantidad>
+            </ingrediente>
+            <ingrediente nombre="arroz">
+                <cantidad>50</cantidad>
+            </ingrediente>
+            <ingrediente nombre="gambas">
+                <cantidad>25</cantidad>
+            </ingrediente>
+            <ingrediente nombre="jamon york">
+                <cantidad>20</cantidad>
+            </ingrediente>
+            <ingrediente nombre="aceite">
+                <cantidad>15</cantidad>
+            </ingrediente>
+        </ingredientes>
+    </primero>
+</primeros>

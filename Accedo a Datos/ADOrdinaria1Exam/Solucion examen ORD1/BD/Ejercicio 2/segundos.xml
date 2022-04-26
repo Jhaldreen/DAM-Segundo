@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<segundos>
+    <segundo id="Seg1">
+        <nombre>filete con patatas fritas</nombre>
+        <ingredientes>
+            <ingrediente nombre="ternera">
+                <cantidad>150</cantidad>
+            </ingrediente>
+            <ingrediente nombre="patatas">
+                <cantidad>50</cantidad>
+            </ingrediente>
+            <ingrediente nombre="aceite">
+                <cantidad>5</cantidad>
+            </ingrediente>
+        </ingredientes>
+    </segundo>
+    <segundo id="Seg2">
+        <nombre>huevos con patatas fritas</nombre>
+        <ingredientes>
+            <ingrediente nombre="huevo">
+                <cantidad>70</cantidad>
+            </ingrediente>
+            <ingrediente nombre="patatas">
+                <cantidad>50</cantidad>
+            </ingrediente>
+            <ingrediente nombre="aceite">
+                <cantidad>5</cantidad>
+            </ingrediente>
+        </ingredientes>
+    </segundo>
+    <segundo id="Seg3">
+        <nombre>filete merluza con pimientos</nombre>
+        <ingredientes>
+            <ingrediente nombre="filete merluza">
+                <cantidad>150</cantidad>
+            </ingrediente>
+            <ingrediente nombre="pimientos morrones">
+                <cantidad>50</cantidad>
+            </ingrediente>
+            <ingrediente nombre="aceite">
+                <cantidad>5</cantidad>
+            </ingrediente>
+        </ingredientes>
+    </segundo>
+    <segundo id="Seg4">
+        <nombre>filete panga con patatas fritas</nombre>
+        <ingredientes>
+            <ingrediente nombre="panga">
+                <cantidad>150</cantidad>
+            </ingrediente>
+            <ingrediente nombre="patatas">
+                <cantidad>50</cantidad>
+            </ingrediente>
+            <ingrediente nombre="aceite">
+                <cantidad>5</cantidad>
+            </ingrediente>
+        </ingredientes>
+    </segundo>
+    <segundo id="Seg5">
+        <nombre>pollo guisado</nombre>
+        <ingredientes>
+            <ingrediente nombre="pollo">
+                <cantidad>200</cantidad>
+            </ingrediente>
+            <ingrediente nombre="tomate">
+                <cantidad>50</cantidad>
+            </ingrediente>
+            <ingrediente nombre="cebolla">
+                <cantidad>25</cantidad>
+            </ingrediente>
+            <ingrediente nombre="jamon">
+                <cantidad>20</cantidad>
+            </ingrediente>
+            <ingrediente nombre="aceite">
+                <cantidad>15</cantidad>
+            </ingrediente>
+        </ingredientes>
+    </segundo>
+    <segundo id="Seg6">
+        <nombre>huevos con salchichas</nombre>
+        <ingredientes>
+            <ingrediente nombre="huevo">
+                <cantidad>70</cantidad>
+            </ingrediente>
+            <ingrediente nombre="patatas">
+                <cantidad>50</cantidad>
+            </ingrediente>
+            <ingrediente nombre="salchicha">
+                <cantidad>30</cantidad>
+            </ingrediente>
+            <ingrediente nombre="aceite">
+                <cantidad>5</cantidad>
+            </ingrediente>
+        </ingredientes>
+    </segundo>
+</segundos>
