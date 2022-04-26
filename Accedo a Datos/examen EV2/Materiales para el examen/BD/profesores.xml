@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profesores>
+    <profesor dni="11111111-A">
+        <nombre>Diego</nombre>
+        <apellidos>Serrano Toca</apellidos>
+        <telefono>987654321</telefono>
+        <asignaturas numAsignaturas="4">
+            <asignatura>2</asignatura>
+            <asignatura>3</asignatura>
+            <asignatura>4</asignatura>
+            <asignatura>6</asignatura>
+        </asignaturas>
+    </profesor>
+    <profesor dni="22222222-B">
+        <nombre>David</nombre>
+        <apellidos>Salas Torre</apellidos>
+        <telefono>887654321</telefono>
+        <asignaturas numAsignaturas="4">
+            <asignatura>1</asignatura>
+            <asignatura>2</asignatura>
+            <asignatura>3</asignatura>
+            <asignatura>5</asignatura>
+        </asignaturas>
+    </profesor>
+    <profesor dni="33333333-C">
+        <nombre>Marta</nombre>
+        <apellidos>Ugarte Uriarte</apellidos>
+        <telefono>787654321</telefono>
+        <asignaturas numAsignaturas="1">
+            <asignatura>9</asignatura>
+        </asignaturas>
+    </profesor>
+    <profesor dni="44444444-D">
+        <nombre>Cristina</nombre>
+        <apellidos>Arranz Salmon</apellidos>
+        <telefono>687654321</telefono>
+        <asignaturas numAsignaturas="4">
+            <asignatura>5</asignatura>
+            <asignatura>6</asignatura>
+            <asignatura>7</asignatura>
+            <asignatura>8</asignatura>
+        </asignaturas>
+    </profesor>
+    <profesor dni="55555555-E">
+        <nombre>Fernando</nombre>
+        <apellidos>Pereda Mingo</apellidos>
+        <telefono>587654321</telefono>
+        <asignaturas numAsignaturas="3">
+            <asignatura>3</asignatura>
+            <asignatura>6</asignatura>
+            <asignatura>7</asignatura>
+        </asignaturas>
+    </profesor>
+</profesores>

@@ -1,0 +1,6 @@
+grant{	
+	permission java.net.SocketPermission "localhost:6060-", 
+	                  "accept, connect, listen, resolve";	
+ permission java.io.FilePermission "\Desktop\jimenez_sevilla_antonio_examenOrdinaria1\Ejercicio2Servidor", "read";
+};
+

@@ -1,3 +1,0 @@
-Ventana para obtener los datos
-Pulsando F1 en la ventana principal, se abrirá esta página de ayuda.
-Este informe reporta los datos de las ventas por categoría y artículo desde 2018.

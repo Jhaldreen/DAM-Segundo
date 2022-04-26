@@ -1,0 +1,6 @@
+Este fichero esta hecho para leer
+varias lineas y que la aplicacion
+funcione perfectamente. 
+
+	Un saludo
+

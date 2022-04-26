@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="552.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="programahotel.FXMLDocumentController">
+   <children>
+      <Pane prefHeight="559.0" prefWidth="672.0" style="-fx-background-color: pink;">
+         <children>
+            <Button fx:id="botonSalir" layoutX="388.0" layoutY="473.0" mnemonicParsing="false" onAction="#handlebuttonSalir" prefHeight="35.0" prefWidth="157.0" style="-fx-border-color: black;" text="Salir">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font></Button>
+            <Label layoutX="14.0" layoutY="87.0" prefHeight="22.0" prefWidth="71.0" text="Nombre:">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="140.0" prefHeight="22.0" prefWidth="77.0" text="Teléfono:">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="190.0" prefHeight="22.0" prefWidth="58.0" text="Fecha:">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="242.0" prefHeight="22.0" prefWidth="134.0" text="Nº Habitaciones:">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="288.0" prefHeight="22.0" prefWidth="102.0" text="Nº Personas:">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="345.0" prefHeight="22.0" prefWidth="124.0" text="Tipo de Evento:">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="400.0" prefHeight="22.0" prefWidth="124.0" text="Tipo de Cocina:">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="117.0" layoutY="473.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="157.0" style="-fx-border-color: black;" text="Aceptar">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="247.0" fitWidth="317.0" layoutX="309.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField layoutX="81.0" layoutY="86.0" />
+            <TextField layoutX="91.0" layoutY="139.0" />
+            <TextField layoutX="148.0" layoutY="241.0" prefHeight="25.0" prefWidth="46.0" />
+            <TextField layoutX="119.0" layoutY="287.0" prefHeight="25.0" prefWidth="46.0" />
+            <ImageView fitHeight="237.0" fitWidth="354.0" layoutX="300.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagenes/salon01.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="155.0" layoutY="14.0" prefHeight="50.0" prefWidth="388.0" text="Salón Havana">
+               <font>
+                  <Font name="Broadway" size="48.0" />
+               </font>
+            </Label>
+            <RadioButton layoutX="165.0" layoutY="403.0" mnemonicParsing="false" text="Buffet">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="evento" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="262.0" layoutY="403.0" mnemonicParsing="false" text="Carta" toggleGroup="$evento">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton layoutX="349.0" layoutY="403.0" mnemonicParsing="false" text="Pedir Cita con el Chef" toggleGroup="$evento">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton layoutX="545.0" layoutY="403.0" mnemonicParsing="false" text="No Precisa" toggleGroup="$evento">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </RadioButton>
+            <ComboBox fx:id="comboEvento" layoutX="138.0" layoutY="344.0" prefWidth="150.0" promptText="Seleccione Evento" />
+            <DatePicker layoutX="78.0" layoutY="189.0" promptText="Seleccione Fecha" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="132dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bocaabajo" />
+
+    <ImageView
+        android:id="@+id/iv3"
+        android:layout_width="132dp"
+        android:layout_height="139dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv2"
+        app:layout_constraintStart_toEndOf="@id/iv2"
+        app:layout_constraintTop_toTopOf="@id/iv2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bocaabajo" />
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="132dp"
+        android:layout_height="139dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv1"
+        app:layout_constraintStart_toEndOf="@+id/iv1"
+        app:layout_constraintTop_toTopOf="@+id/iv1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bocaabajo" />
+
+    <ImageView
+        android:id="@+id/iv5"
+        android:layout_width="132dp"
+        android:layout_height="139dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv4"
+        app:layout_constraintStart_toEndOf="@+id/iv4"
+        app:layout_constraintTop_toBottomOf="@+id/iv1"
+        app:srcCompat="@drawable/bocaabajo" />
+
+    <ImageView
+        android:id="@+id/iv4"
+        android:layout_width="132dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv1"
+        app:srcCompat="@drawable/bocaabajo" />
+
+    <ImageView
+        android:id="@+id/iv6"
+        android:layout_width="132dp"
+        android:layout_height="139dp"
+        app:layout_constraintStart_toEndOf="@+id/iv5"
+        app:layout_constraintTop_toBottomOf="@+id/iv3"
+        app:srcCompat="@drawable/bocaabajo" />
+
+    <ImageView
+        android:id="@+id/iv7"
+        android:layout_width="132dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv4"
+        app:srcCompat="@drawable/bocaabajo" />
+
+    <ImageView
+        android:id="@+id/iv8"
+        android:layout_width="132dp"
+        android:layout_height="139dp"
+        app:layout_constraintStart_toEndOf="@+id/iv7"
+        app:layout_constraintTop_toBottomOf="@+id/iv5"
+        app:srcCompat="@drawable/bocaabajo" />
+
+    <ImageView
+        android:id="@+id/iv10"
+        android:layout_width="132dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv7"
+        app:srcCompat="@drawable/bocaabajo" />
+
+    <ImageView
+        android:id="@+id/iv11"
+        android:layout_width="132dp"
+        android:layout_height="139dp"
+        app:layout_constraintStart_toEndOf="@+id/iv10"
+        app:layout_constraintTop_toBottomOf="@+id/iv8"
+        app:srcCompat="@drawable/bocaabajo" />
+
+    <ImageView
+        android:id="@+id/iv12"
+        android:layout_width="132dp"
+        android:layout_height="139dp"
+        app:layout_constraintStart_toEndOf="@+id/iv11"
+        app:layout_constraintTop_toBottomOf="@+id/iv9"
+        app:srcCompat="@drawable/bocaabajo" />
+
+    <ImageView
+        android:id="@+id/iv9"
+        android:layout_width="132dp"
+        android:layout_height="139dp"
+        app:layout_constraintStart_toEndOf="@+id/iv8"
+        app:layout_constraintTop_toBottomOf="@+id/iv6"
+        app:srcCompat="@drawable/bocaabajo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

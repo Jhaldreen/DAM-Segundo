@@ -1,0 +1,12 @@
+Funcionamiento de la aplicación
+
+Esta aplicación genera un informe que representa los datos de los clientes de que dispone nuestra empresa.
+
+En la ventana principal debe seleccionar el codigo del cliente del que desea obtener la información y hacer click en informe.
+
+
+Ventana para obtener los datos
+
+Pulsando F1 en la ventana principal, se abrirá esta página de ayuda
+
+Este informe reporta los datos de los clientes

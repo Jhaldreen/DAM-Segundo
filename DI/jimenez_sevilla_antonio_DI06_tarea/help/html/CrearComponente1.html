@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Componente</title>
+</head>
+<body>
+<h1 align="center">Ayuda para crear un Componente en NetBeans Parte 1</h1>
+<p>Lo primero de todo que hay que tener claro es que hacer un componente es hacer una pieza de software reutilizable,
+    es progrmar algo para utilizar en el futuro. </p>
+<h2 align ="center">Paso número 1</h2>
+<ul>
+    <li>
+        Comenzaremos por crear un proyecto de tipo Java Application. Lo configuraremos para que tenga las opciones desmarcadas de 
+        Crear clase principal y Usar una carpeta para almacenar las bibliotecas.
+    </li>
+    <li>
+        A continuación, añadiremos al proyecto un archivo de tipo Componente JavaBeans.(si no lo encuentras en la lista que sale 
+        en el menú contextual, haz clic en la opción Otros... para acceder al resto de tipos de archivos).
+    </li>
+    <li>
+        Para ello, seleccionamos nuestro proyecto, pulsamos el botón derecho Nuevo, categorías Objeto JavaBeans y seleccionamos en 
+        la derecha el tipo de archivo mencionado.
+    </li>
+    <li>Pulsamos Siguiente y le asignamos el nombre ComponenteMiTexto (porejemplo) y lo vamos a guardar dentro de un paquete denominado miscontroles.</li>
+    <li>Para concluir pulsamos Terminar</li>
+</ul>
+<h2 align = "center">Paso número 2</h2>
+<p>
+    Para que una clase se pueda considerar un componente debe implementar la interfaz Serializable y, además, tener un constructor sin argumentos que vimos 
+    eran requisitos para la creación de componentes.
+    El objetivo de este componente es disponer de una etiqueta con un comportamiento específico. Puesto que ya tenemos un control con parte de la funcionalidad 
+    que nos interesa, como un método para pintar el texto con el formato adecuado ya implementado, nos serviremos de él heredando nuestra clase de JLabel, quedando 
+    la signatura de la clase así:
+</p>
+<p align = "center"><i>
+
+    public class TemporizadorBean extends JLabel implements Serializable
+    
+    </i></p>
+    Obviamente, tendremos que importar el paquete javax.swing.JLabel.
+<ul>
+    <li>
+        Procederemos a acceder al código de la clase y eliminar todo el código introducido por el IDE. De tal forma, que la clase ComponenteMiTexto quede vacía. 
+        Sólo con la estructura básica.
+    </li>
+    <li>Cómo lo que vamos a crear es la modificación de una etiqueta,  hacemos que la clase ComponenteMiTexto herede de la clase JTextField</li>
+    <li>
+        A continuación, procedemos a crear las propiedades ancho, color y fuente.  Ancho lo definiremos de tipo entero, color de tipo java.awt.Color y fuente de 
+        tipo java.awt.Font (por ejemplo). Por cada propiedad que definamos tenemos que agregar los métodos <strong>set y get.</strong> Veamos cómo se realiza para 
+        la propiedad color y luego este proceso habría que repetirlo para las otras dos propiedades.
+
+        NetBeans proporciona una ayuda especial para realizar esta tarea. Con el cursor posicionado dentro de la clase (puedes reservar una zona para el código de propiedades) 
+        haz clic con el botón secundario y selecciona la opción Insertar Código..., en la lista que te saldrá elige Agregar propiedad. Se desplegará el siguiente cuadro de 
+        diálogo en el que puedes escribir el nombre de la propiedad y su tipo, e insertar los métodos get y set de manera automática.
+    </li>
+    <li>
+        Comenzamos por desplegar el menú contextual, con el botón secundario del ratón, situándonos del código de nuestra clase y seleccionamos la opción Insertar
+         código y a continuación, seleccionamos Agregar Propiedad.
+    </li>    
+    <li>Definimos el nombre, lo declaramos privado y activamos la casilla para que nos genere los métodos set y get.</li>    
+</ul>
+
+<a href="CrearComponente2.html">Pagina Siguiente</a>
+</body>
+</html>

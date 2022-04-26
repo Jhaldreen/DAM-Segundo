@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14-dic-2021 17:54:33 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="ejercicio2.Aulas" table="aulas" catalog="ies" optimistic-lock="version">
+        <id name="naula" type="int">
+            <column name="naula" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="20" />
+        </property>
+        <property name="capacidad" type="java.lang.Integer">
+            <column name="capacidad" />
+        </property>
+        <set name="alumnoses" table="alumnos" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="numaula" />
+            </key>
+            <one-to-many class="ejercicio2.Alumnos" />
+        </set>
+    </class>
+</hibernate-mapping>

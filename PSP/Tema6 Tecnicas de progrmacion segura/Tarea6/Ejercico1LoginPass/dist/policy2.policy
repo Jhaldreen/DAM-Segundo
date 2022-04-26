@@ -1,0 +1,6 @@
+grant codeBase "C:\datos\Ejercicio1LoginPass.jar" { 
+
+permission java.util.PropertyPermission "user.home", "read"; 
+permission java.util.PropertyPermission "user.name", "read";
+permission java.util.PropertyPermission "user.dir", "read";
+};

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<toc version="1.0"> <!--  categoryclosedimage="FolderClosed" categoryopenimage="FolderOpened"  
-topicimage="ItemIco"-->
-    <tocitem text="Ayuda"    target="aplicacion">
-        <tocitem text="Ventana principal"    target="ventana_datos">
-	</tocitem>
-    </tocitem>
-</toc>

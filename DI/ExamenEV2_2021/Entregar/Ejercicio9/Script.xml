@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\Administrador\Documents\Examen\Entregar\Ejercicio8\ExAppExa.jar</jar>
+  <outfile>C:\Users\Administrador\Documents\Examen\Entregar\Ejercicio9\AppExe.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\Administrador\Documents\Examen\Ejercicio9\icono.ico</icon>
+  <jre>
+    <path></path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion>1.8.0</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>GPL</txtFileVersion>
+    <fileDescription>Aplicación exa segunda EV</fileDescription>
+    <copyright>2021</copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>GPL</txtProductVersion>
+    <productName>Aplicación exa segunda EV</productName>
+    <companyName></companyName>
+    <internalName>AppExe</internalName>
+    <originalFilename>AppExe.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>CASTILIAN_SPANISH</language>
+  </versionInfo>
+</launch4jConfig>

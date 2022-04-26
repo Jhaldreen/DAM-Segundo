@@ -1,0 +1,1 @@
+componentemitexto.ComponenteMiTexto

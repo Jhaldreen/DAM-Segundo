@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<asignaturas>
+    <asignatura id="1">
+        <nombre>Sistemas informaticos</nombre>
+        <curso>1</curso>
+        <horas>100</horas>
+    </asignatura>
+    <asignatura id="2">
+        <nombre>Bases de datos</nombre>
+        <curso>1</curso>
+        <horas>105</horas>
+    </asignatura>
+    <asignatura id="3">
+        <nombre>Programacion</nombre>
+        <curso>1</curso>
+        <horas>135</horas>
+    </asignatura>
+    <asignatura id="4">
+        <nombre>Lenguajes de marcas</nombre>
+        <curso>1</curso>
+        <horas>70</horas>
+    </asignatura>
+    <asignatura id="5">
+        <nombre>Entornos</nombre>
+        <curso>1</curso>
+        <horas>50</horas>
+    </asignatura>
+    <asignatura id="6">
+        <nombre>Acceso a datos</nombre>
+        <curso>2</curso>
+        <horas>80</horas>
+    </asignatura>
+    <asignatura id="7">
+        <nombre>Programacion multimedia</nombre>
+        <curso>2</curso>
+        <horas>55</horas>
+    </asignatura>
+    <asignatura id="8">
+        <nombre>Programacion de servicios</nombre>
+        <curso>2</curso>
+        <horas>40</horas>
+    </asignatura>
+    <asignatura id="9">
+        <nombre>Empresa e iniciativa emprendedora</nombre>
+        <curso>2</curso>
+        <horas>35</horas>
+    </asignatura>
+</asignaturas>
