@@ -7,7 +7,7 @@ Es la asigantura más difícil, hay que hacer más ejercicios de los que te mand
 El ultimo tema de SGE el 5 que hay crear un modulo, puede que ese código no funione en todas las versiones de odoo, por si lo copias lo pegas y no funiona, el resto están todas de 10 
 
 # PMDM
-El tema 3 no hay tarea se solapa con la del tema 4 ya que solo es teoria, aconsejo no dejar muy de lado estas tareas, por que Android es muy caprichoso y depende de la version nos dará unos problemas u otros.
+El tema 3 no hay tarea, se solapa con la del tema 4 ya que solo es teoria, aconsejo no dejar muy de lado estas tareas, por que Android es muy caprichoso y depende de la version nos dará unos problemas u otros.
 
 # Acceso a Datos
 
